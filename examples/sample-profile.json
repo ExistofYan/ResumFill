@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "title": "演示资料（请换成自己的）",
+  "fields": {
+    "name": "张同学",
+    "first_name": "Alex",
+    "last_name": "Zhang",
+    "email": "alex.student@example.com",
+    "phone": "13800000000",
+    "city": "上海",
+    "school": "示例大学",
+    "major": "软件工程",
+    "degree": "硕士",
+    "job_title": "后端开发实习生",
+    "skills": "Java、Python、Spring Boot、PostgreSQL",
+    "summary": "软件工程学生，有后端项目经验，能够参与接口开发与数据库优化。"
+  },
+  "custom": [{"label": "第二段实习公司", "value": "示例科技有限公司"}]
+}

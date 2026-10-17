@@ -1,0 +1,15 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="stylesheet" href="popup.css"><script src="popup.js" defer></script></head><body>
+<header><span>RF</span><div><h1>ResumeFill <small>2.1</small></h1><small>简历一键填写</small></div></header>
+<p id="profile">正在读取资料…</p><select id="profiles" aria-label="切换简历版本"></select>
+<label class="file">＋ 导入简历资料 JSON<input type="file" id="import" accept=".json"></label>
+<label class="check"><input type="checkbox" id="replace">更新当前版本（重置此版本字段记忆）</label>
+<div class="line"></div><button id="scan" class="primary">扫描当前页 · 预览填写内容</button>
+<label class="check"><input id="overwrite" type="checkbox">允许覆盖已有内容（默认保留）</label>
+<div id="preview" hidden><div class="actions"><button id="all">全选可填项</button><button id="none">全部取消</button></div><div id="rows"></div><button id="apply" class="primary">确认填写勾选项</button></div>
+<button id="fill">直接填写常见字段</button><button id="undo">撤销本页插件填写</button>
+<h2>手动指定字段</h2><p class="muted">选择资料，再点网页输入框。多段经历用不同自定义字段，可记住对应关系。</p>
+<input id="filter" placeholder="搜索资料字段或内容" aria-label="搜索资料字段"><select id="field" aria-label="资料字段"></select><textarea id="value" readonly aria-label="字段内容"></textarea>
+<div class="actions"><button id="pick">选择网页输入框</button><button id="copy">复制内容</button></div><button id="cancel">取消选择模式</button>
+<p id="status" role="status">资料仅保存在此浏览器，不会自动提交。</p>
+<details><summary>备份与管理</summary><button id="export">导出当前简历 JSON</button><button id="clearMap">清除此版本字段记忆</button><button id="clearProfile">删除当前简历版本</button><a href="http://127.0.0.1:8765" target="_blank">打开本地资料编辑器 ↗</a></details>
+</body></html>

@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "ResumeFill 简历一键填",
+  "version": "2.1.0",
+  "description": "本地简历资料，中英文招聘表单填写、手动字段记忆及撤销。不会提交表单。",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {"default_popup": "popup.html", "default_title": "ResumeFill 简历一键填"},
+  "background": {"service_worker": "background.js"}
+}
